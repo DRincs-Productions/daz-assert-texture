@@ -1,0 +1,54 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/PixelTizzyFit/War%20and%20Peace%20Camo%20Pack/WP%20Fabric%20%21Clear%20Base%20Color.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "PixelTizzyFit",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-01-14T16:34:33Z"
+	},
+	"scene" : {
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?diffuse/value",
+				"keys" : [ [ 0, [ 1, 1, 1 ] ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image",
+				"keys" : [ [ 0, null ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/scale",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/invert",
+				"keys" : [ [ 0, false ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/horizontal_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?diffuse/image_modification/vertical_tiling_offset",
+				"keys" : [ [ 0, 0 ] ]
+			}
+		]
+	}
+}

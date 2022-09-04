@@ -1,0 +1,136 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/PixelTizzyFit/Magic%21/Utilities/PTFM%20Tile%202x2.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "PixelTizzyFit",
+			"email" : "",
+			"website" : ""
+		},
+		"revision" : "1.0",
+		"modified" : "2020-01-31T05:32:01Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Arms",
+			"extra" : [
+				{
+					"type" : "studio/material/uber_iray",
+					"version" : "1.1.0.0"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Horizontal Tiles",
+								"type" : "float",
+								"label" : "Horizontal Tiles",
+								"value" : 1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Geometry/Tiling",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Horizontal Offset",
+								"type" : "float",
+								"label" : "Horizontal Offset",
+								"value" : 0,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Geometry/Tiling",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Vertical Tiles",
+								"type" : "float",
+								"label" : "Vertical Tiles",
+								"value" : 1,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Geometry/Tiling",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Vertical Offset",
+								"type" : "float",
+								"label" : "Vertical Offset",
+								"value" : 0,
+								"min" : -10000,
+								"max" : 10000,
+								"step_size" : 0.01
+							},
+							"group" : "/Geometry/Tiling",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.5019608, 0.5019608, 0.5019608 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Arms",
+				"extra" : [
+					{
+						"type" : "studio/material/uber_iray",
+						"version" : "1.1.0.0"
+					},
+					{
+						"type" : "studio/element_data/simple_data",
+						"name" : "OctaneRender_item",
+						"settings" : {
+							"ouid" : "{dbbe6131-1cd1-4513-ad33-8f95f2a3ce03}"
+						}
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Horizontal%20Tiles/value",
+				"keys" : [ [ 0, 7 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Vertical%20Tiles/value",
+				"keys" : [ [ 0, 7 ] ]
+			}
+		]
+	}
+}
