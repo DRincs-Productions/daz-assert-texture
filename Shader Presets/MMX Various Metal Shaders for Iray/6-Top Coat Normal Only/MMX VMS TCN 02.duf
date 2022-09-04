@@ -1,0 +1,110 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/Shader%20Presets/Iray/MMX%20Various%20Metal%20Shaders%20for%20Iray/3-Normal%20Maps%20Only/3-Lower/MMX%20VMS%20NL%20001.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Mattymanx",
+			"email" : "",
+			"website" : "www.daz3d.com/mattymanx"
+		},
+		"revision" : "1.0",
+		"modified" : "2018-11-19T22:33:12Z"
+	},
+	"image_library" : [
+		{
+			"id" : "MMXVMS-002-N.png",
+			"name" : "MMXVMS-002-N.png",
+			"map_gamma" : 0,
+			"map" : [
+				{
+					"url" : "/Runtime/Textures/Mattymanx/MMX%20Various%20Metal%20Shaders/MMXVMS-002-N.png",
+					"label" : "MMXVMS-002-N.png"
+				}
+			]
+		}
+	],
+	"material_library" : [
+		{
+			"id" : "Default",
+			"extra" : [
+				{
+					"type" : "studio/material/uber_iray",
+					"version" : "1.1.0.0"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Top Coat Bump Mode",
+								"type" : "enum",
+								"label" : "Top Coat Bump Mode",
+								"value" : 0,
+								"enum_values" : [ "Height Map", "Normal Map" ]
+							},
+							"group" : "/Top Coat/Bump",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.4, 0.5882353, 0.4 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						},
+						{
+							"channel" : {
+								"id" : "Top Coat Bump",
+								"type" : "float",
+								"label" : "Top Coat Bump",
+								"value" : 1,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/Top Coat/Bump",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.4, 0.5882353, 0.4 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Default",
+				"extra" : [
+					{
+						"type" : "studio/material/uber_iray",
+						"version" : "1.1.0.0"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Top%20Coat%20Bump%20Mode/value",
+				"keys" : [ [ 0, 1 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Top%20Coat%20Bump/image_file",
+				"keys" : [ [ 0, "/Runtime/Textures/Mattymanx/MMX%20Various%20Metal%20Shaders/MMXVMS-002-N.png" ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Top%20Coat%20Bump/image_modification/grayscale_mode",
+				"keys" : [ [ 0, "average" ] ]
+			}
+		]
+	}
+}

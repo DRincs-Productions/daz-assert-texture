@@ -1,0 +1,77 @@
+{
+	"file_version" : "0.6.0.0",
+	"asset_info" : {
+		"id" : "/E%3A/e/MMX%20Various%20Metal%20Shaders/Tiling%20Base.duf",
+		"type" : "preset_shader",
+		"contributor" : {
+			"author" : "Mattymanx",
+			"email" : "",
+			"website" : "www.daz3d.com/mattymanx"
+		},
+		"revision" : "1.0",
+		"modified" : "2018-11-23T17:01:07Z"
+	},
+	"material_library" : [
+		{
+			"id" : "Default",
+			"extra" : [
+				{
+					"type" : "studio/material/uber_iray",
+					"version" : "1.1.0.0"
+				},
+				{
+					"type" : "studio_material_channels",
+					"channels" : [
+						{
+							"channel" : {
+								"id" : "Top Coat Bump",
+								"type" : "float",
+								"label" : "Top Coat Bump",
+								"value" : 1,
+								"min" : 0,
+								"max" : 2,
+								"clamped" : true,
+								"step_size" : 0.01,
+								"default_image_gamma" : 1,
+								"mappable" : true,
+								"invalid_without_map" : true
+							},
+							"group" : "/Top Coat/Bump",
+							"presentation" : {
+								"type" : "",
+								"label" : "",
+								"description" : "",
+								"icon_large" : "",
+								"colors" : [ [ 0.4, 0.5882353, 0.4 ], [ 0.5019608, 0.5019608, 0.5019608 ] ]
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"scene" : {
+		"materials" : [
+			{
+				"url" : "#Default",
+				"extra" : [
+					{
+						"type" : "studio/material/uber_iray",
+						"version" : "1.1.0.0"
+					}
+				]
+			}
+		],
+		"animations" : [
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Top%20Coat%20Bump/image_modification/horizontal_tiles",
+				"keys" : [ [ 0, 3 ] ]
+			},
+			{
+				"url" : "name://@selection#materials:?extra/studio_material_channels/channels/Top%20Coat%20Bump/image_modification/vertical_tiles",
+				"keys" : [ [ 0, 3 ] ]
+			}
+			
+		]
+	}
+}
